@@ -1,0 +1,28 @@
+# Dataset (large)
+data/PlantVillage/
+
+# Model weights & artifacts (large)
+models/*.pt
+models/*.pkl
+
+# Grad-CAM sample images (generated)
+assets/gradcam_samples/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code workspace
+.claude/

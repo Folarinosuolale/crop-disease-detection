@@ -1,0 +1,16 @@
+class,display_name,crop,is_healthy,precision,recall,f1,support
+Pepper__bell___Bacterial_spot,Pepper Bell - Bacterial Spot,Pepper,False,1.0,1.0,1.0,149
+Pepper__bell___healthy,Pepper Bell - Healthy,Pepper,True,1.0,1.0,1.0,221
+Potato___Early_blight,Potato - Early Blight,Potato,False,1.0,1.0,1.0,150
+Potato___Late_blight,Potato - Late Blight,Potato,False,0.9933774834437086,1.0,0.9966777408637874,150
+Potato___healthy,Potato - Healthy,Potato,True,1.0,1.0,1.0,23
+Tomato_Bacterial_spot,Tomato - Bacterial Spot,Tomato,False,0.9906832298136646,1.0,0.9953198127925117,319
+Tomato_Early_blight,Tomato - Early Blight,Tomato,False,0.9867549668874173,0.9933333333333333,0.9900332225913622,150
+Tomato_Late_blight,Tomato - Late Blight,Tomato,False,1.0,0.9930313588850174,0.9965034965034965,287
+Tomato_Leaf_Mold,Tomato - Leaf Mold,Tomato,False,0.9794520547945206,1.0,0.9896193771626297,143
+Tomato_Septoria_leaf_spot,Tomato - Septoria Leaf Spot,Tomato,False,1.0,0.981203007518797,0.9905123339658444,266
+Tomato_Spider_mites_Two_spotted_spider_mite,Tomato - Spider Mites,Tomato,False,0.9921259842519685,1.0,0.9960474308300395,252
+Tomato__Target_Spot,Tomato - Target Spot,Tomato,False,0.9951923076923077,0.9857142857142858,0.9904306220095693,210
+Tomato__Tomato_YellowLeaf__Curl_Virus,Tomato - Yellow Leaf Curl Virus,Tomato,False,1.0,0.9979253112033195,0.9989615784008308,482
+Tomato__Tomato_mosaic_virus,Tomato - Mosaic Virus,Tomato,False,1.0,1.0,1.0,56
+Tomato_healthy,Tomato - Healthy,Tomato,True,1.0,1.0,1.0,239
