@@ -1,11 +1,3 @@
-"""
-Crop Disease Detection - Data Loading and Preparation
-======================================================
-Scans the PlantVillage dataset directory, creates stratified
-train/val/test splits, defines augmentation transforms, and
-produces PyTorch DataLoaders with class-weighted sampling.
-"""
-
 import os
 import random
 from collections import Counter
