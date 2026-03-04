@@ -21,7 +21,7 @@ Plant diseases cause up to 40% of global crop losses annually, and early detecti
 Agricultural disease detection directly impacts food security and farmer livelihoods:
 - **Late detection** allows diseases to spread across entire fields, turning a treatable outbreak into a total loss
 - **Misidentification** leads to wrong treatments, wasted pesticide, and continued crop damage
-- **Access gap** -- smallholder farmers in developing regions rarely have access to plant pathologists
+- **Access gap**: smallholder farmers in developing regions rarely have access to plant pathologists
 
 This project demonstrates building a model that is not just accurate, but **visually explainable** through Grad-CAM heatmaps.
 
@@ -39,12 +39,12 @@ This project demonstrates building a model that is not just accurate, but **visu
 
 EfficientNetB0 was selected for its balance of accuracy and efficiency -- 5.3M parameters, fast enough to train on CPU or Apple Silicon, and strong transfer learning performance from ImageNet pretraining.
 
-> **Note on accuracy:** These results are on the PlantVillage lab dataset, where controlled lighting and clean backgrounds make disease patterns highly distinguishable. Published benchmarks consistently report 95–99%+ accuracy on this dataset across multiple architectures. Real-world field deployment would require validation on in-situ photographs, where accuracy is expected to be lower due to variable lighting, overlapping foliage, and early-stage symptoms. See the [Technical Report](docs/PROJECT_REPORT.md#10-limitations--real-world-considerations) for a full limitations analysis.
+> **Note on accuracy:** These results are on the PlantVillage lab dataset, where controlled lighting and clean backgrounds make disease patterns highly distinguishable. Published benchmarks consistently report 95–99%+ accuracy on this dataset across multiple architectures. Real-world field deployment would require validation on in-situ photographs, where accuracy is expected to be lower due to variable lighting, overlapping foliage, and early-stage symptoms.
 
 ### Key Findings
-1. **Transfer learning works** -- ImageNet features transfer effectively to leaf disease classification despite the significant domain shift from general objects to plant pathology
-2. **Class imbalance matters** -- the dataset ranges from 152 images (Potato Healthy) to 3,209 images (Tomato Yellow Leaf Curl Virus), a 21:1 ratio. Weighted loss was critical for balanced performance
-3. **Grad-CAM confirms the model looks at lesions** -- heatmaps consistently highlight diseased tissue regions rather than background or healthy leaf areas, validating that the model learned meaningful visual features
+1. **Transfer learning works**: ImageNet features transfer effectively to leaf disease classification despite the significant domain shift from general objects to plant pathology
+2. **Class imbalance matters**: The dataset ranges from 152 images (Potato Healthy) to 3,209 images (Tomato Yellow Leaf Curl Virus), a 21:1 ratio. Weighted loss was critical for balanced performance
+3. **Grad-CAM confirms the model looks at lesions**: Heatmaps consistently highlight diseased tissue regions rather than background or healthy leaf areas, validating that the model learned meaningful visual features
 
 ---
 
@@ -131,11 +131,11 @@ PlantVillage is the standard benchmark for plant disease classification:
 
 The Streamlit app includes 5 pages:
 
-1. **Overview** -- Key metrics, pipeline summary, insights
-2. **Data Explorer** -- Class distribution charts, sample images, crop breakdown
-3. **Model Performance** -- Confusion matrix heatmap, training curves, per-class metrics
-4. **Grad-CAM Explanations** -- Gallery of Grad-CAM samples by class
-5. **Live Prediction** -- Upload a leaf image, get disease prediction + confidence + Grad-CAM overlay + treatment recommendation
+1. **Overview**: Key metrics, pipeline summary, insights
+2. **Data Explorer**: Class distribution charts, sample images, crop breakdown
+3. **Model Performance**: Confusion matrix heatmap, training curves, per-class metrics
+4. **Grad-CAM Explanations**: Gallery of Grad-CAM samples by class
+5. **Live Prediction**: Upload a leaf image, get disease prediction + confidence + Grad-CAM overlay + treatment recommendation
 
 ### Run the Dashboard
 
@@ -173,7 +173,7 @@ This project mirrors workflows used in precision agriculture and agri-tech:
 
 ```bash
 # 1. Clone and install
-git clone <repository-url>
+git clone https://github.com/Folarinosuolale/crop-disease-detection
 cd crop-disease-detection
 pip install -r requirements.txt
 
