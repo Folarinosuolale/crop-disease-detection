@@ -1,10 +1,3 @@
-"""
-Crop Disease Detection - Full Pipeline Runner
-==============================================
-Executes the complete pipeline from data loading through
-model training, evaluation, explainability, and artifact saving.
-"""
-
 import os
 import sys
 import json
