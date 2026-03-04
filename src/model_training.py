@@ -1,11 +1,3 @@
-"""
-Crop Disease Detection - Model Training and Evaluation
-=======================================================
-EfficientNetB0 with transfer learning. Two-phase training:
-Phase 1 trains only the classifier head (backbone frozen),
-Phase 2 fine-tunes the full network with a smaller learning rate.
-"""
-
 import os
 import time
 import copy
