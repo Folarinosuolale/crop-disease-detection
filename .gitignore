@@ -1,9 +1,6 @@
 # Dataset (large)
 data/PlantVillage/
 
-# Model weights & artifacts are tracked (16MB total)
-# Needed for Live Prediction on Streamlit Cloud
-
 # Grad-CAM sample images (generated)
 assets/gradcam_samples/
 
