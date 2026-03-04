@@ -1,11 +1,3 @@
-"""
-Crop Disease Detection - Grad-CAM Explainability
-=================================================
-Implements Gradient-weighted Class Activation Mapping (Grad-CAM)
-to visualize which regions of a leaf image the model focuses on
-when making its disease prediction.
-"""
-
 import os
 
 import numpy as np
