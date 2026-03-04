@@ -1054,7 +1054,10 @@ elif page == "Data Explorer":
             format_func=lambda x: DISPLAY_NAMES.get(x, x),
         )
 
+        # Full dataset first, fall back to bundled sample images
         data_dir = os.path.join(ROOT, 'data', 'PlantVillage', selected_class)
+        if not os.path.exists(data_dir):
+            data_dir = os.path.join(ROOT, 'assets', 'sample_images', selected_class)
         if os.path.exists(data_dir):
             images = [f for f in os.listdir(data_dir)
                       if f.lower().endswith(('.jpg', '.jpeg', '.png'))][:9]

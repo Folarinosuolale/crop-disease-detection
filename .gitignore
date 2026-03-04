@@ -1,8 +1,8 @@
 # Dataset (large)
 data/PlantVillage/
 
-# Grad-CAM sample images (generated)
-assets/gradcam_samples/
+# assets/sample_images/ and assets/gradcam_samples/ are tracked
+# (small subsets needed for the deployed Streamlit dashboard)
 
 # Python
 __pycache__/
