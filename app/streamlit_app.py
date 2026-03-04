@@ -1,10 +1,3 @@
-"""
-Crop Disease Detection - Interactive Streamlit Dashboard
-========================================================
-Deep learning pipeline: EfficientNetB0 transfer learning,
-Grad-CAM explainability, and live predictions.
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
