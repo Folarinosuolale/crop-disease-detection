@@ -16,6 +16,8 @@ A deep learning system that identifies crop diseases from leaf images using tran
 
 Plant diseases cause up to 40% of global crop losses annually, and early detection is the single most effective intervention. A trained agronomist can identify most diseases by sight, but there are not enough agronomists to cover every field. This project demonstrates that a convolutional neural network trained on leaf images can replicate that visual diagnosis with high accuracy and, critically, can show exactly what it is looking at when it makes its call.
 
+Context: I built this at FarmHub AgroServices as a prototype for a crop disease detection tool aimed at smallholder farmers, who rarely have access to plant pathologists. It is not deployed yet. This public version trains and evaluates on PlantVillage, an open benchmark, so the full pipeline can be inspected and reproduced. Field validation on in-situ photographs is the next step before any real deployment.
+
 ### Why This Matters
 
 Agricultural disease detection directly impacts food security and farmer livelihoods:
